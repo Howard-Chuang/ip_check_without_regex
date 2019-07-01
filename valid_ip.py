@@ -32,11 +32,12 @@
                       for s in seg_str:
                           if s not in set_chars:
                               return False
-
-                      # not sure why test case didn't check '0000'
-                      # if len(seg_str) > 1 and seg_str[0] == '0' and seg_str[1] == '0':
-                      #     print(2)
-                      #     return False
+                      
+                      # make sure no multi '0'
+                      not sure why test case didn't check '0000'
+                      if len(seg_str) > 1 and seg_str[0] == '0' and seg_str[1] == '0':
+                          print(2)
+                          return False
 
                   else:
                       return False
